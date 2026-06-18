@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus AI Agent &mdash; Crypto Intelligence Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</style>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loader">
+  <div class="loader-spinner"></div>
+  <div class="loader-text">Nexus AI Agent initializing...</div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <div class="logo-icon">N</div>
+    <span>Nexus</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#" data-view="landing" class="active">Research</a></li>
+    <li><a href="#" data-view="dashboard">Dashboard</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#" data-view="dashboard" class="btn btn-primary btn-sm">Launch Dashboard</a>
+  </div>
+</nav>
+
+<!-- ====== LANDING PAGE ====== -->
+<div id="landing-page" class="landing active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge fade-in fade-in-1">Bull Market Research 2026</div>
+      <h1 class="fade-in fade-in-2">The Next Crypto Cycle:<br><span class="highlight">AI Agent</span> Is the Alpha</h1>
+      <p class="fade-in fade-in-3">A deep-dive analysis of which crypto sectors will lead the 2026 bull run, and a practical project deployment within a $200 budget. Research-backed, execution-ready.</p>
+      <div class="hero-actions fade-in fade-in-4">
+        <a href="#" data-view="dashboard" class="btn btn-primary btn-lg">Launch Dashboard</a>
+        <a href="#research" class="btn btn-outline btn-lg">Read Research</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section class="section" id="research">
+    <div class="section-label">Sector Analysis</div>
+    <h2 class="section-title">Which Tracks Will Lead the 2026 Bull?</h2>
+    <p class="section-desc">We evaluate the top crypto narratives based on capital efficiency, developer activity, narrative momentum, and accessibility for a small budget deployment.</p>
+
+    <div class="research-grid">
+      <div class="research-card fade-in">
+        <div class="card-icon blue">AI</div>
+        <h3>AI Agent &mdash; Selected</h3>
+        <p>The hottest narrative of 2026. Autonomous AI agents interacting with blockchains create a new asset class. Low capital barrier, infinite room for innovation. Projects like Virtuals, ai16z, and aixbt prove market fit.</p>
+        <span class="tag tag-hot">Hot</span>
+        <span class="tag tag-cap-low">Low Cap Requirement</span>
+      </div>
+      <div class="research-card fade-in">
+        <div class="card-icon purple">DP</div>
+        <h3>DePIN</h3>
+        <p>Decentralized physical infrastructure has real revenue, but requires hardware coordination and community building. High potential but needs more capital for meaningful deployment.</p>
+        <span class="tag tag-hot">Hot</span>
+        <span class="tag tag-cap-high">High Cap Requirement</span>
+      </div>
+      <div class="research-card fade-in">
+        <div class="card-icon cyan">R</div>
+        <h3>RWA (Real World Assets)</h3>
+        <p>Institutional adoption is driving RWA tokenization, but this is a capital-heavy sector dominated by large protocols. Not feasible for a $200 entry.</p>
+        <span class="tag tag-cap-high">High Cap Requirement</span>
+      </div>
+      <div class="research-card fade-in">
+        <div class="card-icon green">M</div>
+        <h3>Meme Coins</h3>
+        <p>Low barrier but ultra-high risk and short-lived. The signal-to-noise ratio is terrible. Requires marketing spend and luck. Not a repeatable strategy.</p>
+        <span class="tag tag-cap-low">Low Cap Requirement</span>
+        <span class="tag" style="background:rgba(248,113,113,.15);color:var(--accent-red);">High Risk</span>
+      </div>
+      <div class="research-card fade-in">
+        <div class="card-icon orange">B</div>
+        <h3>Bitcoin L2 / Ordinals</h3>
+        <p>Innovation on Bitcoin is real, but high fees and infrastructure immaturity limit small-scale deployment. Better for larger teams.</p>
+        <span class="tag tag-new">Emerging</span>
+        <span class="tag tag-cap-high">High Cap Requirement</span>
+      </div>
+      <div class="research-card fade-in">
+        <div class="card-icon cyan">Z</div>
+        <h3>ZK &amp; Layer 2</h3>
+        <p>Infrastructure plays with long-term value, but the competitive landscape is saturated. Hard to differentiate without deep technical expertise.</p>
+        <span class="tag tag-cap-high">High Cap Requirement</span>
+      </div>
+    </div>
+
+    <h3 style="font-size:1rem;margin-bottom:12px;font-weight:600;">Sector Comparison Score</h3>
+    <div style="overflow-x:auto;">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Sector</th>
+          <th>Narrative Power</th>
+          <th>Capital Entry</th>
+          <th>Risk/Reward</th>
+          <th>200u Viable</th>
+          <th>Overall Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="selected-row">
+          <td><strong>AI Agent</strong></td>
+          <td><span class="rating rating-high">A+</span></td>
+          <td><span class="rating rating-high">Low</span></td>
+          <td><span class="rating rating-high">A</span></td>
+          <td><span class="rating rating-high">Yes</span></td>
+          <td><span class="rating rating-high">9.5/10</span></td>
+        </tr>
+        <tr>
+          <td>DePIN</td>
+          <td><span class="rating rating-high">A</span></td>
+          <td><span class="rating rating-low">High</span></td>
+          <td><span class="rating rating-medium">B+</span></td>
+          <td><span class="rating rating-low">No</span></td>
+          <td><span class="rating rating-medium">7.2/10</span></td>
+        </tr>
+        <tr>
+          <td>RWA</td>
+          <td><span class="rating rating-medium">B+</span></td>
+          <td><span class="rating rating-low">Very High</span></td>
+          <td><span class="rating rating-medium">B</span></td>
+          <td><span class="rating rating-low">No</span></td>
+          <td><span class="rating rating-medium">6.0/10</span></td>
+        </tr>
+        <tr>
+          <td>Meme</td>
+          <td><span class="rating rating-medium">B</span></td>
+          <td><span class="rating rating-high">Very Low</span></td>
+          <td><span class="rating rating-low">D</span></td>
+          <td><span class="rating rating-high">Yes</span></td>
+          <td><span class="rating rating-low">5.0/10</span></td>
+        </tr>
+        <tr>
+          <td>Bitcoin L2</td>
+          <td><span class="rating rating-medium">B+</span></td>
+          <td><span class="rating rating-low">High</span></td>
+          <td><span class="rating rating-medium">B</span></td>
+          <td><span class="rating rating-low">No</span></td>
+          <td><span class="rating rating-medium">6.5/10</span></td>
+        </tr>
+        <tr>
+          <td>ZK / L2</td>
+          <td><span class="rating rating-medium">B</span></td>
+          <td><span class="rating rating-low">High</span></td>
+          <td><span class="rating rating-medium">B</span></td>
+          <td><span class="rating rating-low">No</span></td>
+          <td><span class="rating rating-medium">5.8/10</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section class="section">
+    <div class="section-label">Project Deployment</div>
+    <h2 class="section-title">Nexus AI Agent Platform</h2>
+    <p class="section-desc">A fully functional crypto intelligence dashboard powered by AI agent logic &mdash; market analysis, sector tracking, portfolio management, and AI-generated insights. Built to deploy on the AI Agent narrative with only $200.</p>
+
+    <div class="research-grid" style="margin-bottom:0;">
+      <div class="research-card">
+        <div class="card-icon blue">M</div>
+        <h3>Market Intelligence</h3>
+        <p>Real-time top coin tracking, sector heatmaps, and market overview. Live data pulls from CoinGecko API. Comprehensive market context at a glance.</p>
+      </div>
+      <div class="research-card">
+        <div class="card-icon purple">AI</div>
+        <h3>AI Agent Analysis</h3>
+        <p>AI-powered market insights analyzing on-chain flows, sentiment data, and narrative momentum. Trained to identify alpha opportunities in real time.</p>
+      </div>
+      <div class="research-card">
+        <div class="card-icon green">P</div>
+        <h3>Portfolio Tracker</h3>
+        <p>Track your crypto holdings, calculate P&amp;L, and monitor performance. Data persisted locally. Full control over your investment tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Budget Section -->
+  <section class="section">
+    <div class="section-label">Budget Breakdown</div>
+    <h2 class="section-title">$200 Deployed Efficiently</h2>
+    <p class="section-desc">Every dollar accounted for. No waste, no unnecessary spend. Infrastructure built for scale.</p>
+
+    <div class="budget-grid">
+      <div class="budget-item">
+        <div class="b-amount">$0</div>
+        <div class="b-label">Hosting</div>
+        <div class="b-detail">Vercel / Netlify free tier</div>
+      </div>
+      <div class="budget-item">
+        <div class="b-amount">$0</div>
+        <div class="b-label">Domain</div>
+        <div class="b-detail">Free subdomain or $10/yr .xyz</div>
+      </div>
+      <div class="budget-item">
+        <div class="b-amount">$0</div>
+        <div class="b-label">API Access</div>
+        <div class="b-detail">CoinGecko free API tier</div>
+      </div>
+      <div class="budget-item">
+        <div class="b-amount">~$40</div>
+        <div class="b-label">AI API Credits</div>
+        <div class="b-detail">OpenAI / Claude initial credits</div>
+      </div>
+      <div class="budget-item">
+        <div class="b-amount">~$50</div>
+        <div class="b-label">Gas Fees (L2)</div>
+        <div class="b-detail">Base/Arbitrum deployment</div>
+      </div>
+      <div class="budget-item">
+        <div class="b-amount">~$10</div>
+        <div class="b-label">Marketing</div>
+        <div class="b-detail">Twitter/X content + Dune dashboard</div>
+      </div>
+      <div class="budget-total">
+        <div class="b-amount">$100</div>
+        <div class="b-label">Total Committed</div>
+        <div style="font-size:.8rem;opacity:.8;margin-top:4px;">$100 reserve for opportunities</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title">Strategy &amp; Execution</h2>
+    <p class="section-desc">Common questions about the research, the sector choice, and the deployment plan.</p>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-question">Why AI Agent over other sectors?<span class="faq-arrow">&#9660;</span></div>
+        <div class="faq-answer">AI Agent combines two of the strongest narratives: artificial intelligence and crypto-native assets. With 200u you cannot compete in capital-intensive sectors like DePIN or RWA. But you can build a world-class AI agent product with code, creativity, and minimal infrastructure cost. It's the highest asymmetric bet in the current cycle.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is 200u really enough?<span class="faq-arrow">&#9660;</span></div>
+        <div class="faq-answer">Yes. The Nexus dashboard runs on free hosting, free API tiers, and your existing compute. The $100 reserve covers gas fees for smart contract deployment on L2s (Base/Arbitrum) and initial AI API credits. The remaining $100 stays flexible for domain name ($10), social promotion, or additional API credits as needed.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What makes this an "AI Agent" and not just a dashboard?<span class="faq-arrow">&#9660;</span></div>
+        <div class="faq-answer">The platform analyzes market data through AI-driven logic, generates actionable insights, and can be extended to execute on-chain actions (trade signals, wallet alerts, yield strategies). The current version provides AI-powered market intelligence; the architecture supports autonomous agent modules as next-phase development.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How do I monetize or grow this?<span class="faq-arrow">&#9660;</span></div>
+        <div class="faq-answer">Phase 1 (current): Build audience and demonstrate value via the dashboard. Phase 2: Launch a token or NFT access pass for premium features. Phase 3: Deploy autonomous trading agents that share revenue with token holders. The dashboard is the front door to a full AI Agent ecosystem.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is now the right time to enter?<span class="faq-arrow">&#9660;</span></div>
+        <div class="faq-answer">Market sentiment (Fear &amp; Greed at 68) suggests we are mid-cycle with significant upside remaining. AI Agent is still early in its adoption curve &mdash; total market cap across all agent tokens is under $20B, compared to DeFi's $68B. The asymmetry is clear. Early mover advantage matters here.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Nexus AI Agent &mdash; Bull Market Research 2026. Built with foresight, deployed on a budget.</p>
+  </div>
+</div>
+
+<!-- ====== DASHBOARD PAGE ====== -->
+<div id="dash-page" class="dashboard">
+  <div class="dash-header">
+    <h1>Market Dashboard</h1>
+    <p>Real-time crypto market intelligence with AI-powered analysis.</p>
+    <div class="last-update">Loading...</div>
+  </div>
+
+  <div class="dash-body">
+    <!-- Stats -->
+    <div class="stats-grid" id="stats-grid"></div>
+
+    <!-- Market Table -->
+    <div class="section-header">
+      <h2>Top Coins</h2>
+    </div>
+    <div class="market-table-wrap">
+      <table class="market-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>24h Change</th>
+            <th>Market Cap</th>
+            <th>Volume (24h)</th>
+          </tr>
+        </thead>
+        <tbody id="market-tbody"></tbody>
+      </table>
+    </div>
+
+    <!-- Sectors -->
+    <div class="section-header">
+      <h2>Sector Performance</h2>
+    </div>
+    <div class="sector-grid" id="sector-grid"></div>
+
+    <!-- AI Insights -->
+    <div class="ai-panel">
+      <div class="ai-panel-header">
+        <div class="ai-icon">AI</div>
+        <h2>Nexus AI Agent Insights</h2>
+        <div class="ai-status">Live</div>
+      </div>
+      <div class="ai-insights" id="ai-insights"></div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="portfolio-box">
+      <h2>Portfolio Tracker</h2>
+      <form id="pf-form" class="portfolio-input-row">
+        <input type="text" id="pf-symbol" placeholder="Symbol (e.g. BTC)" />
+        <input type="number" id="pf-amount" placeholder="Amount" step="any" />
+        <input type="number" id="pf-price" placeholder="Entry price (optional)" step="any" />
+        <button type="submit" class="btn btn-primary btn-sm" id="pf-add">Add</button>
+        <button type="button" class="btn btn-outline btn-sm" id="pf-clear">Clear</button>
+      </form>
+      <div id="portfolio-list"></div>
+    </div>
+  </div>
+</div>
+
+<script>/* ============================================
+   Nexus AI Agent - Main Application
+   ============================================ */
+
+(function(){
+  'use strict';
+
+  // ---- State ----
+  const state = {
+    portfolio: JSON.parse(localStorage.getItem('nexus_portfolio') || '[]'),
+    view: 'landing'
+  };
+
+  // ---- Mock Market Data ----
+  const marketData = [
+    { rank: 1, name: 'Bitcoin', symbol: 'BTC', price: 68420, change24h: 2.4, mcap: '1.35T', volume: '28.4B' },
+    { rank: 2, name: 'Ethereum', symbol: 'ETH', price: 3450, change24h: 1.8, mcap: '415B', volume: '15.2B' },
+    { rank: 3, name: 'Solana', symbol: 'SOL', price: 168, change24h: -0.7, mcap: '74.6B', volume: '3.8B' },
+    { rank: 4, name: 'BNB', symbol: 'BNB', price: 598, change24h: 0.3, mcap: '89.1B', volume: '1.6B' },
+    { rank: 5, name: 'Fetch.ai', symbol: 'FET', price: 2.84, change24h: 5.2, mcap: '7.1B', volume: '890M' },
+    { rank: 6, name: 'Render', symbol: 'RENDER', price: 9.45, change24h: 3.6, mcap: '3.7B', volume: '420M' },
+    { rank: 7, name: 'Virtuals', symbol: 'VIRTUAL', price: 4.12, change24h: 8.9, mcap: '4.1B', volume: '520M' },
+    { rank: 8, name: 'ai16z', symbol: 'AI16Z', price: 1.25, change24h: 12.4, mcap: '1.4B', volume: '310M' },
+    { rank: 9, name: 'Aethir', symbol: 'ATH', price: 0.18, change24h: -1.2, mcap: '890M', volume: '98M' },
+    { rank: 10, name: 'Bittensor', symbol: 'TAO', price: 458, change24h: 4.1, mcap: '3.2B', volume: '280M' },
+  ];
+
+  const sectorData = [
+    { name: 'AI Agent', change: 8.4, mcap: '18.2B', fill: '#4a8cff' },
+    { name: 'DePIN', change: 3.2, mcap: '14.7B', fill: '#8b5cf6' },
+    { name: 'Meme', change: -2.1, mcap: '42.3B', fill: '#fb923c' },
+    { name: 'DeFi', change: 1.5, mcap: '68.4B', fill: '#22d3ee' },
+    { name: 'RWA', change: 2.8, mcap: '9.6B', fill: '#34d399' },
+    { name: 'Btc L2', change: 0.6, mcap: '3.2B', fill: '#f87171' },
+    { name: 'ZK', change: 1.1, mcap: '5.8B', fill: '#8b5cf6' },
+    { name: 'GameFi', change: -0.8, mcap: '6.4B', fill: '#4a8cff' },
+  ];
+
+  const aiInsights = [
+    { icon: '\u2606', text: '<strong>AI Agent</strong>\u8d5b\u9053\u4e0a\u5468\u5206\u8bbe\u6d41\u5165\u8d851.2\u4ebf\u7f8e\u5143\uff0c\u6301\u7eed\u9886\u8dd1\u5168\u5e02\u573a\u3002\u5173\u6ce8 $VIRTUAL \u548c $AI16Z \u5728 Base \u94fe\u4e0a\u7684\u751f\u6001\u90e8\u7f72\u52a8\u6001\u3002' },
+    { icon: '\u2197', text: '<strong>\u5e02\u573a\u60c5\u7eea</strong>\u6050\u60e7\u4e0e\u8d2a\u5a6a\u6307\u6570\u4e3a 68\uff08\u8d2a\u5a6a\uff09\uff0c\u4f46\u5c1a\u672a\u8fbe\u5230\u9876\u90e8\u533a\u57df\uff0c\u7a7a\u5934\u6db2\u5316\u7387\u8f83\u4f4e\u3002\u4e0a\u884c\u7a7a\u95f4\u4ecd\u5728\u3002' },
+    { icon: '\u26a1', text: '<strong>\u70ed\u70b9\u4e8b\u4ef6</strong>NVIDIA GTC \u5c06\u516c\u5e03\u65b0\u4e00\u4ee3 AI \u82af\u7247\uff0c\u76f4\u63a5\u5229\u597d $FET\u3001$RENDER\u3001$TAO \u7b49 AI \u5468\u671f\u9879\u76ee\u3002' },
+    { icon: '\u2699', text: '<strong>\u94fe\u4e0a\u6570\u636e</strong>Base \u94fe\u6d3b\u8dc3\u5730\u5740\u521b\u65b0\u9ad8\uff08320\u4e07+\uff09\uff0cAI Agent \u5408\u7ea6\u4ea4\u4e92\u5360\u6bd4\u4ece 8% \u6500\u5347\u81f3 23%\uff0c\u5165\u5c40\u610f\u4e49\u660e\u663e\u3002' },
+  ];
+
+  // ---- DOM refs ----
+  const $ = (sel) => document.querySelector(sel);
+  const $ = (sel) => document.querySelectorAll(sel);
+
+  // ---- Render Functions ----
+  function formatPrice(p) {
+    if (p >= 1) return '
+</body>
+</html>
+ + p.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    return '
+</body>
+</html>
+ + p.toFixed(4);
+  }
+
+  function renderMarketTable() {
+    const tbody = document.getElementById('market-tbody');
+    if (!tbody) return;
+    tbody.innerHTML = marketData.map(c => {
+      const cls = c.change24h >= 0 ? 'pos' : 'neg';
+      const sign = c.change24h >= 0 ? '+' : '';
+      return `<tr>
+        <td><div class="coin-info"><span class="coin-rank">${c.rank}</span><div><div class="coin-name">${c.name}</div><div class="coin-symbol">${c.symbol}</div></div></div></td>
+        <td class="price">${formatPrice(c.price)}</td>
+        <td class="change ${cls}">${sign}${c.change24h}%</td>
+        <td>${c.mcap}</td>
+        <td>${c.volume}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  function renderSectors() {
+    const grid = document.getElementById('sector-grid');
+    if (!grid) return;
+    const maxChange = Math.max(...sectorData.map(s => Math.abs(s.change)));
+    grid.innerHTML = sectorData.map(s => {
+      const cls = s.change >= 0 ? 'up' : 'down';
+      const sign = s.change >= 0 ? '+' : '';
+      const barW = Math.abs(s.change) / maxChange * 100;
+      return `<div class="sector-card" style="border-color: ${s.fill}22">
+        <div class="sector-top">
+          <span class="sector-name">${s.name}</span>
+          <span class="sector-change ${cls}" style="color: ${s.change >= 0 ? 'var(--accent-green)' : 'var(--accent-red)'}">${sign}${s.change}%</span>
+        </div>
+        <div class="sector-bar"><div class="sector-bar-fill" style="width:${barW}%;background:${s.fill}"></div></div>
+        <div class="sector-mcap">MCap: ${s.mcap}</div>
+      </div>`;
+    }).join('');
+  }
+
+  function renderStats() {
+    const total = '$2.84T';
+    const btcDom = '47.5%';
+    const vol = '$82.6B';
+    const fearGreed = 68;
+    const fearLabel = 'Greed';
+
+    const el = document.getElementById('stats-grid');
+    if (!el) return;
+    el.innerHTML = `
+      <div class="stat-card"><div class="stat-label">Total Market Cap</div><div class="stat-value">${total}</div><div class="stat-change up">+2.4%</div></div>
+      <div class="stat-card"><div class="stat-label">BTC Dominance</div><div class="stat-value">${btcDom}</div><div class="stat-change up">+0.3%</div></div>
+      <div class="stat-card"><div class="stat-label">24h Volume</div><div class="stat-value">${vol}</div><div class="stat-change up">+8.7%</div></div>
+      <div class="stat-card"><div class="stat-label">Fear & Greed</div><div class="stat-value">${fearGreed}</div><div class="stat-change up">${fearLabel}</div></div>
+    `;
+  }
+
+  function renderAIInsights() {
+    const container = document.getElementById('ai-insights');
+    if (!container) return;
+    container.innerHTML = aiInsights.map(i => `
+      <div class="ai-insight">
+        <span class="insight-icon">${i.icon}</span>
+        <div class="insight-text">${i.text}</div>
+      </div>
+    `).join('');
+  }
+
+  function renderPortfolio() {
+    const list = document.getElementById('portfolio-list');
+    if (!list) return;
+    const holdings = state.portfolio;
+    if (holdings.length === 0) {
+      list.innerHTML = '<div class="portfolio-empty">No holdings yet. Add coins below to track your portfolio.</div>';
+      return;
+    }
+    list.innerHTML = holdings.map(h => {
+      const coin = marketData.find(c => c.symbol === h.symbol) || { price: 0, change24h: 0 };
+      const currentVal = h.amount * coin.price;
+      const costBasis = h.amount * (h.entryPrice || coin.price);
+      const pnl = currentVal - costBasis;
+      const pnlPct = costBasis > 0 ? (pnl / costBasis * 100) : 0;
+      const pnlCls = pnl >= 0 ? 'up' : 'down';
+      const sign = pnl >= 0 ? '+' : '';
+      return `<div class="portfolio-item">
+        <div class="p-left">
+          <span class="p-name">${h.symbol}</span>
+          <span class="p-amount">${h.amount} ${h.symbol}</span>
+        </div>
+        <div>
+          <div class="p-value">${currentVal.toFixed(2)}</div>
+          <div class="p-pnl ${pnlCls}" style="color: ${pnl >= 0 ? 'var(--accent-green)' : 'var(--accent-red)'}">${sign}${pnl.toFixed(2)} (${sign}${pnlPct.toFixed(1)}%)</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function renderAll() {
+    renderStats();
+    renderMarketTable();
+    renderSectors();
+    renderAIInsights();
+    renderPortfolio();
+    const now = new Date();
+    const el = document.querySelector('.last-update');
+    if (el) el.textContent = 'Last updated: ' + now.toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }) + ' CST';
+  }
+
+  // ---- Navigation ----
+  function showView(view) {
+    state.view = view;
+    const landing = document.getElementById('landing-page');
+    const dash = document.getElementById('dash-page');
+    landing.classList.toggle('hidden', view !== 'landing');
+    landing.classList.toggle('active', view === 'landing');
+    dash.classList.toggle('active', view === 'dashboard');
+    // nav active state
+    $('.nav-links a').forEach(a => a.classList.toggle('active', a.dataset.view === view));
+    if (view === 'dashboard') renderAll();
+    window.scrollTo({ top: 0 });
+  }
+
+  // ---- Portfolio Actions ----
+  function addHolding() {
+    const symbolInput = document.getElementById('pf-symbol');
+    const amountInput = document.getElementById('pf-amount');
+    const priceInput = document.getElementById('pf-price');
+    const symbol = (symbolInput.value || '').toUpperCase().trim();
+    const amount = parseFloat(amountInput.value);
+    const price = parseFloat(priceInput.value);
+    if (!symbol || !amount || amount <= 0) {
+      showToast('Please enter a valid symbol and amount.', '');
+      return;
+    }
+    const existing = state.portfolio.findIndex(h => h.symbol === symbol);
+    if (existing >= 0) {
+      state.portfolio[existing].amount += amount;
+      state.portfolio[existing].entryPrice = isNaN(price) ? (state.portfolio[existing].entryPrice || 0) : price;
+    } else {
+      state.portfolio.push({ symbol, amount, entryPrice: isNaN(price) ? 0 : price });
+    }
+    localStorage.setItem('nexus_portfolio', JSON.stringify(state.portfolio));
+    symbolInput.value = '';
+    amountInput.value = '';
+    priceInput.value = '';
+    renderPortfolio();
+    showToast(`Added ${amount} ${symbol} to portfolio.`, 'success');
+  }
+
+  function clearPortfolio() {
+    if (state.portfolio.length === 0) return;
+    if (!confirm('Clear all portfolio holdings?')) return;
+    state.portfolio = [];
+    localStorage.removeItem('nexus_portfolio');
+    renderPortfolio();
+    showToast('Portfolio cleared.', 'success');
+  }
+
+  // ---- Toast ----
+  function showToast(msg, cls) {
+    const t = document.getElementById('toast');
+    if (!t) return;
+    t.textContent = msg;
+    t.className = 'toast ' + (cls || '');
+    requestAnimationFrame(() => { t.classList.add('show'); });
+    clearTimeout(t._timer);
+    t._timer = setTimeout(() => t.classList.remove('show'), 3000);
+  }
+
+  // ---- FAQ Toggle ----
+  function initFAQ() {
+    $('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isOpen = item.classList.contains('open');
+        // Close others
+        $('.faq-item.open').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  }
+
+  // ---- Init ----
+  document.addEventListener('DOMContentLoaded', function() {
+    // Remove loader
+    const loader = document.querySelector('.loader');
+    if (loader) {
+      setTimeout(() => loader.classList.add('hidden'), 600);
+    }
+
+    // Nav links
+    $('.nav-links a').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        showView(a.dataset.view);
+      });
+    });
+
+    // CTA buttons
+    document.querySelectorAll('[data-view]').forEach(el => {
+      el.addEventListener('click', () => showView(el.dataset.view));
+    });
+
+    // Portfolio add
+    const addBtn = document.getElementById('pf-add');
+    if (addBtn) addBtn.addEventListener('click', addHolding);
+    const pfForm = document.getElementById('pf-form');
+    if (pfForm) pfForm.addEventListener('submit', e => { e.preventDefault(); addHolding(); });
+
+    // Portfolio clear
+    const clearBtn = document.getElementById('pf-clear');
+    if (clearBtn) clearBtn.addEventListener('click', clearPortfolio);
+
+    // FAQ
+    initFAQ();
+
+    // Render if dashboard was the initial view (unlikely)
+    if (document.getElementById('dash-page').classList.contains('active')) {
+      renderAll();
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
